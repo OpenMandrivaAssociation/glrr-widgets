@@ -15,6 +15,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{distname}.tar.bz2
+Patch0: glrr-widgets-20050529-underlinking.patch
 License: BSD
 Group: System/Libraries
 Url: http://sourceforge.net/projects/grift/
@@ -49,6 +50,8 @@ applications which will use %{name}.
 
 %prep
 %setup -q -n %{distname}
+%patch0 -p1 -b .underlinking
+autoreconf
 
 %build
 %configure
