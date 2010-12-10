@@ -1,8 +1,8 @@
 %define name glrr-widgets
 %define version 0
 %define date 20050529
-%define rel 2
-%define release %mkrel 0.%{date}.1
+%define rel 3
+%define release %mkrel 0.%{date}.2
 %define distname %{name}-%{date}
 %define common_description %{name} contains miscellaneous gtk+ widgets.
 
