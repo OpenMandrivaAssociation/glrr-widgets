@@ -1,0 +1,11 @@
+diff -p -up glrr-widgets-20050529/src/Makefile.am.underlinking glrr-widgets-20050529/src/Makefile.am
+--- glrr-widgets-20050529/src/Makefile.am.underlinking	2005-05-29 07:25:53.000000000 +0200
++++ glrr-widgets-20050529/src/Makefile.am	2008-11-07 10:33:07.000000000 +0100
+@@ -8,6 +8,7 @@ glrr_widgetsinclude_HEADERS = $(libglrr_
+ INCLUDES = $(libglrr_widgets_includes)
+ 
+ libglrr_widgets_la_LDFLAGS =
++libglrr_widgets_la_LIBADD = @GLRR_GLIB_LIBS@ @GLRR_GOBJECT_LIBS@ @GTK_LIBS@
+ libglrr_widgets_la_SOURCES = $(libglrr_widgets_sources)
+ 
+ 
